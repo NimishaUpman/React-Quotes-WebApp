@@ -12,7 +12,7 @@ const HighlightedQuote = (props) => {
   const { sendRequest, status, error } = useHttp(DeleteQuote, false);
 
   const deletionHandler = () => {
-    console.log('delete ' + props.id);
+    // console.log('delete ' + props.id);
     setIsLoading(true);
     sendRequest(props.id);
     setIsLoading(false);

@@ -114,7 +114,7 @@ export async function DeleteQuote(props) {
   }
 
   const responce = await fetch(
-    `https://quotes-33a21-default-rtdb.firebaseio.com/quotes/${props}.json`,
+    `https://quotes-73287-default-rtdb.firebaseio.com/quotes/${props}.json`,
     {
       method: 'DELETE',
       headers: {
