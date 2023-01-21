@@ -1,4 +1,4 @@
-const FIREBASE_DOMAIN = 'https://quotes-33a21-default-rtdb.firebaseio.com/';
+const FIREBASE_DOMAIN = 'https://quotes-73287-default-rtdb.firebaseio.com/';
 
 export async function getAllQuotes() {
   const response = await fetch(FIREBASE_DOMAIN + 'quotes.json');
@@ -100,7 +100,7 @@ export async function getAllComments(quoteId) {
 
 export async function DeleteQuote(props) {
   const res = await fetch(
-    `https://quotes-33a21-default-rtdb.firebaseio.com/comments/${props}.json`,
+    `https://quotes-73287-default-rtdb.firebaseio.com/comments/${props}.json`,
     {
       method: 'DELETE',
       headers: {
